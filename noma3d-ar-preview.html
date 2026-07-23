@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noma3D — Vezi în AR</title>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.3.0/dist/model-viewer.min.js"></script>
+<style>
+  body{margin:0;background:#f6f1e9;font-family:'Inter',sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:20px;}
+  model-viewer{display:block;width:100%;max-width:480px;height:60vh;background:#efe7d8;border-radius:14px;}
+  h1{font-family:Georgia,serif;font-size:20px;color:#2e2a24;margin:20px 0 4px;}
+  p{color:#6b6459;font-size:13px;margin:0 0 20px;}
+</style>
+</head>
+<body>
+  <h1>Noma3D</h1>
+  <p>Apasă butonul din colț pentru a vedea piesa la tine în spațiu</p>
+  <model-viewer src="https://dorinmorozan9-eng.github.io/dorinmorozan9.github.io/vaza-01.glb"  ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate shadow-intensity="1" exposure="1" loading="eager" reveal="auto"></model-viewer>
+</body>
+</html>
